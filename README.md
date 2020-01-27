@@ -1,0 +1,2 @@
+# VimConfigTemplate
+Template .vimrc configuration
