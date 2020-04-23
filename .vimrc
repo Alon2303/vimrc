@@ -9,6 +9,7 @@ filetype indent on
 set wildmenu
 set lazyredraw
 set spell spelllang=en_us
+set complete+=kspell
 #set spellfile=$HOME/Dropbox/vim/spell/en.utf-8.add
 set showmatch
 set foldenable
