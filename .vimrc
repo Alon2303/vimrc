@@ -8,6 +8,8 @@ set cursorline
 filetype indent on
 set wildmenu
 set lazyredraw
+set spelllang=en
+#set spellfile=$HOME/Dropbox/vim/spell/en.utf-8.add
 set showmatch
 set foldenable
 set foldlevelstart=10
