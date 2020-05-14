@@ -1,16 +1,17 @@
-syntax on                                                                                                                                  
+syntax on
+
 " tabs
+set showtabline=2
 set tabstop=4
 set softtabstop=4
+nmap <F7> :tabp<CR>
+nmap <F8> :tabn<CR>
 set number
 set showcmd
 set cursorline
 filetype indent on
 set wildmenu
 set lazyredraw
-set spell spelllang=en_us
-set complete+=kspell
-#set spellfile=$HOME/Dropbox/vim/spell/en.utf-8.add
 set showmatch
 set foldenable
 set foldlevelstart=10
@@ -24,11 +25,12 @@ Plugin 'scrooloose/nerdtree'
 call vundle#end()
 filetype plugin indent on
 " close NERDTree after a file is opened
-let g:NERDTreeQuitOnOpen=0
+ let g:NERDTreeQuitOnOpen=0
 " " show hidden files in NERDTree
-let NERDTreeShowHidden=1
+ let NERDTreeShowHidden=0
 " " Toggle NERDTree
-nmap <silent> <leader>k :NERDTreeToggle<cr>
+ nmap <silent> <leader>k :NERDTreeToggle<cr>
 " " expand to the path of the file in the current buffer
-nmap <silent> <leader>y :NERDTreeFind<cr>
-autocmd VimEnter * NERDTree
+ nmap <silent> <leader>y :NERDTreeFind<cr>
+ autocmd VimEnter * NERDTree
+nmap <leader>t :newtab<cr>
