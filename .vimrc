@@ -6,7 +6,7 @@ set tabstop=4
 set softtabstop=4
 nmap <F7> :tabp<CR>
 nmap <F8> :tabn<CR>
-set number
+set relativenumber
 set showcmd
 set cursorline
 filetype indent on
@@ -18,7 +18,7 @@ set foldlevelstart=10
 nnoremap <space> za
 set foldmethod=indent
 set nocompatible
-filetype off
+filetype on
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'scrooloose/nerdtree'
